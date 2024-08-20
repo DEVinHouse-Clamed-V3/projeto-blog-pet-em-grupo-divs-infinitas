@@ -1,6 +1,6 @@
  // Preview da foto
- const photoUrlInput = document.getElementById('photoUrl');
- const photoPreview = document.getElementById('photoPreview');
+ const photoUrlInput = document.getElementById('photoUrl'); // procura o id da foto
+ const photoPreview = document.getElementById('photoPreview'); // procura o id da foto preview
 
  photoUrlInput.addEventListener('input', () => {
      const url = photoUrlInput.value;
