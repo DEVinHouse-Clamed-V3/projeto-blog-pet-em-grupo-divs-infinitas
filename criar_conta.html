@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="styles/criar_conta.css">
 </head>
 <body>
-    
+
+<div class="form-container">
+    <h2>Criar conta</h2>
+    <img id="photoPreview" src="https://media.licdn.com/dms/image/v2/C4D03AQHF3A0oS7WA9g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1536852136672?e=1729728000&v=beta&t=LdI622fwl1bGDJ0YIZmhJYDcuIZ52sGtFKUq3vP2dxs" alt="Preview da Foto">
+    <form id="signupForm">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="url" id="photoUrl" placeholder="Url da foto" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="senha" placeholder="Senha" required minlength="8" maxlength="16">
+        <input type="password" id="confirmaSenha" placeholder="Confirme a senha" required>
+        <textarea id="biografia" placeholder="Biografia (máximo 300 caracteres)" maxlength="300"></textarea>
+        <button type="submit">Criar conta</button>
+    </form>
+</div>
+
+<script src="scripts/criarConta.js">
+
+</script>
+
 </body>
 </html>
