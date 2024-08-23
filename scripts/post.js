@@ -57,6 +57,7 @@ function loadPost() {
     btnDiv.appendChild(createAt);
 
     const backToHome = document.createElement("a");
+    backToHome.setAttribute("href", "../index.html");
     backToHome.innerText = "Voltar";
     backToHome.classList.add("btn", "btn-secondary");
   
