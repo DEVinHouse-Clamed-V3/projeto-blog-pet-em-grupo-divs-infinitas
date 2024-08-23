@@ -1,14 +1,15 @@
 function cadastrarPost(event) {
     event.preventDefault();
 
-    
+    const category = document.getElementById("categoria");
 
     const post = {
         id: Date.now(),
         titulo: document.getElementById('titulo').value,
         descricao: document.getElementById('descricao').value,
-        dataCriacao: new Date().toLocaleDateString(),  
+        dataCriacao: new Date().toLocaleDateString("pt-br"),  
         categoria: document.getElementById('categoria').value,
+        textoCategoria: category.options[category.selectedIndex].text,
         foto: document.getElementById('foto').value
     };
 
