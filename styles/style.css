@@ -16,6 +16,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--cor-bg-claro);
 }
 
@@ -31,7 +34,7 @@ header {
     align-items: center;
     width: 100%;
     background-color: var(--bg-roxo-normal);
-    height: 75px;
+    height: 80px;
 }
 
 .logo {
@@ -55,7 +58,7 @@ header {
     border-radius: 50%;
     padding: 5px;
     margin-left: 10px;
-    width: 75px;
+    width: 70px;
 }
 
 .logo a {
@@ -96,6 +99,7 @@ a {
     text-decoration: none;
     color: var(--bg-roxo-escuro);
     font-weight: bold;
+    margin-right: 5px;
     
 }
 
@@ -110,6 +114,7 @@ a {
     border: 2px solid var(--bg-roxo-escuro);
     background-color: var(--bg-roxo-normal);
     padding: 10px;
+    margin-right: 5px;
     border-radius: 5px;
     color: var(--bg-branco);
     
@@ -128,8 +133,116 @@ a {
     
 }
 
-@media screen and (max-width: 510px) {
+section h1 {
+    max-width: 990px;
+    width: 100%;
+    color: var(--bg-roxo-normal);
+    padding: 0 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+#tipo {
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 5px;
+    color: var(--bg-roxo-claro);
+}
+
+#nome {
+    text-align: left;
+    padding-top: 5px;
+    color: var(--bg-roxo-normal);
+}
+
+#data {
+    font-weight: 600;
+    color: var(--bg-roxo-claro);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--bg-roxo-normal);
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+
+
+/* == FOOTER == */
+
+.footer {
+    background-color: var(--bg-roxo-normal);
+    color: var(--bg-branco);
+    text-align: center;
+    margin-top: 25px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid var(--bg-roxo-escuro);
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 525px) {
     .container-list a {
         display: none;
     }
 }
+
