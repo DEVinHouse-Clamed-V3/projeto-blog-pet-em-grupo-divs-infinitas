@@ -1,0 +1,100 @@
+.container-login {
+    width: 40%;
+    margin: 40px auto;
+    box-shadow: rgba(150, 139, 139, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px, 
+                rgba(255, 255, 255, 0.40) 0px 0px 15px;
+    padding: auto;
+    background-color: #FEFEFE;
+}
+
+.input-container {
+    display: flex;  
+    flex-direction: column;
+    margin: 5px 0;
+    font-family: Verdana, tahoma, sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+   }
+   
+.input-container label {
+     margin-bottom: 5px;
+     color: #050505;
+     padding: 5x;
+     font-family: Verdana, tahoma, sans-serif;
+    
+}
+
+.input-container input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px;
+    border: 1px solid #050505; /* Adicionei a cor e estilo da borda */
+    padding: 0 10px; /* Adicionei algum padding interno para espaçamento */
+}
+
+h1{
+   text-align: center;
+   background-color: #0047b6;
+   padding: 30px;
+   color: #FEFEFE ;
+   font-family: Verdana, tahoma, sans-serif;;
+}
+
+h2{
+    text-align: center;
+    font-family: Verdana, tahoma, sans-serif;
+    font-size: 16px;
+    color: #050505;
+    padding: 5x;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    width: 100%; /* Ocupa toda a largura disponível do pai */
+}
+
+.button-submit {
+    width: 40%;
+    border-radius: 8px;
+    height: 34px;
+    background-color: #0047b6;
+    color: #FFF;
+    margin-bottom:30px;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.button-submit:hover {
+    background-color:  #0046b6b6;
+    color: #FFF;
+}
+
+.button-criar-conta {
+    width: 40%;
+    border-radius: 8px;
+    height: 34px;
+    background-color: #0047b6;
+    color: #FFF;
+    margin-bottom:20px;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.button-criar-conta:hover {
+    background-color:  #0046b6b6;
+    color: #FFF;
+}
+
+
+
+
+
